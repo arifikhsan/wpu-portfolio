@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,8 +19,38 @@
     <![endif]-->
   </head>
   <body>
-    <!-- jumbotron -->
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
+          <a class="navbar-brand page-scroll" href="#home">Arif Ikhsanudin</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="page-scroll" href="#about">About</a></li>
+            <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="page-scroll" href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- jumbotron -->
     <div class="jumbotron text-center">
       <img
         class="img-circle"
@@ -108,7 +138,7 @@
     <!-- akhir Portfolio -->
 
     <!-- contact -->
-    <section class="contact" id="contact">
+    <section class="contact" id="kontak">
       <div class="container">
         <div class="row">
           <div class="col-sm12 text-center">
@@ -155,7 +185,11 @@
 
               <div class="form-group">
                 <label for="pesan">Pesan</label>
-                <textarea class="form-control" placeholder="Masukkan pesan" rows="10"></textarea>
+                <textarea
+                  class="form-control"
+                  placeholder="Masukkan pesan"
+                  rows="10"
+                ></textarea>
               </div>
 
               <button class="btn btn-primary" type="submit">Kirim Pesan</button>
@@ -171,12 +205,20 @@
       <div class="container text-center">
         <div class="row">
           <div class="sol-sm-12">
-            <p>&copy; Copyright 2019 | build with <i class="glyphicon glyphicon-heart"></i> by. <a href="https://instagram.com/arif.ikhsanudin.ids">Arif Ikhsanudin</a></p>
+            <p>
+              &copy; Copyright 2019 | build with
+              <i class="glyphicon glyphicon-heart"></i> by.
+              <a href="https://instagram.com/arif.ikhsanudin.ids"
+                >Arif Ikhsanudin</a
+              >
+            </p>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12">
-            <a href="https://www.github.com/arifikhsan" class="btn btn-danger" >Go to Github</a>
+            <a href="https://www.github.com/arifikhsan" class="btn btn-danger"
+              >Go to Github</a
+            >
           </div>
         </div>
       </div>
@@ -187,5 +229,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
